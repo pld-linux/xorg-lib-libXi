@@ -16,6 +16,7 @@ BuildRequires:	xorg-lib-libXext-devel
 BuildRequires:	libtool
 BuildRequires:	pkg-config
 BuildRequires:	xorg-util-util-macros
+Obsoletes:	libXi
 BuildRoot:	%{tmpdir}/libXi-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
@@ -34,6 +35,7 @@ Summary(pl):	Pliki nag³ówkowe do biblioteki libXi
 Group:		X11/Development/Libraries
 Requires:	xorg-lib-libXi = %{version}-%{release}
 Requires:	xorg-lib-libXext-devel
+Obsoletes:	libXi-devel
 
 %description devel
 X Input extension library.
@@ -53,6 +55,7 @@ Summary:	Static libXi libraries
 Summary(pl):	Biblioteki statyczne libXi
 Group:		Development/Libraries
 Requires:	xorg-lib-libXi-devel = %{version}-%{release}
+Obsoletes:	libXi-static
 
 %description static
 X Input extension library.
