@@ -24,8 +24,8 @@ X Input extension library.
 Biblioteka rozszerzenia X Input.
 
 %package devel
-Summary:	Header files libXi development
-Summary(pl):	Pliki nag³ówkowe do biblioteki libXi
+Summary:	Header files for libXi library
+Summary(pl):	Pliki nag³ówkowe biblioteki libXi
 Group:		X11/Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	xorg-lib-libXext-devel
@@ -35,7 +35,7 @@ Obsoletes:	libXi-devel
 X Input extension library.
 
 This package contains the header files needed to develop programs that
-use these libXi.
+use libXi.
 
 %description devel -l pl
 Biblioteka rozszerzenia X Input.
