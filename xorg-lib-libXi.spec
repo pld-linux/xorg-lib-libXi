@@ -1,5 +1,5 @@
 Summary:	X Input extension library
-Summary(pl.UTF-8):   Biblioteka rozszerzenia X Input
+Summary(pl.UTF-8):	Biblioteka rozszerzenia X Input
 Name:		xorg-lib-libXi
 Version:	1.1.0
 Release:	3
@@ -26,7 +26,7 @@ Biblioteka rozszerzenia X Input.
 
 %package devel
 Summary:	Header files for libXi library
-Summary(pl.UTF-8):   Pliki nagłówkowe biblioteki libXi
+Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki libXi
 Group:		X11/Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	xorg-lib-libXext-devel
@@ -47,7 +47,7 @@ używających biblioteki libXi.
 
 %package static
 Summary:	Static libXi library
-Summary(pl.UTF-8):   Biblioteka statyczna libXi
+Summary(pl.UTF-8):	Biblioteka statyczna libXi
 Group:		X11/Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 Obsoletes:	libXi-static
