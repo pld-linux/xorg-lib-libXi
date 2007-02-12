@@ -1,5 +1,5 @@
 Summary:	X Input extension library
-Summary(pl):	Biblioteka rozszerzenia X Input
+Summary(pl.UTF-8):   Biblioteka rozszerzenia X Input
 Name:		xorg-lib-libXi
 Version:	1.1.0
 Release:	3
@@ -21,12 +21,12 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 X Input extension library.
 
-%description -l pl
+%description -l pl.UTF-8
 Biblioteka rozszerzenia X Input.
 
 %package devel
 Summary:	Header files for libXi library
-Summary(pl):	Pliki nag³ówkowe biblioteki libXi
+Summary(pl.UTF-8):   Pliki nagÅ‚Ã³wkowe biblioteki libXi
 Group:		X11/Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	xorg-lib-libXext-devel
@@ -39,15 +39,15 @@ X Input extension library.
 This package contains the header files needed to develop programs that
 use libXi.
 
-%description devel -l pl
+%description devel -l pl.UTF-8
 Biblioteka rozszerzenia X Input.
 
-Pakiet zawiera pliki nag³ówkowe niezbêdne do kompilowania programów
-u¿ywaj±cych biblioteki libXi.
+Pakiet zawiera pliki nagÅ‚Ã³wkowe niezbÄ™dne do kompilowania programÃ³w
+uÅ¼ywajÄ…cych biblioteki libXi.
 
 %package static
 Summary:	Static libXi library
-Summary(pl):	Biblioteka statyczna libXi
+Summary(pl.UTF-8):   Biblioteka statyczna libXi
 Group:		X11/Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 Obsoletes:	libXi-static
@@ -57,10 +57,10 @@ X Input extension library.
 
 This package contains the static libXft library.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Biblioteka rozszerzenia X Input.
 
-Pakiet zawiera statyczn± bibliotekê libXft.
+Pakiet zawiera statycznÄ… bibliotekÄ™ libXft.
 
 %prep
 %setup -q -n libXi-%{version}
