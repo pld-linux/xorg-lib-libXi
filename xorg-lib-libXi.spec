@@ -91,13 +91,14 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc COPYING ChangeLog
 %attr(755,root,root) %{_libdir}/libXi.so.*.*.*
+%attr(755,root,root) %ghost %{_libdir}/libXi.so.6
 
 %files devel
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_libdir}/libXi.so
 %{_libdir}/libXi.la
 %{_pkgconfigdir}/xi.pc
-%{_mandir}/man3/*.3x*
+%{_mandir}/man3/X*.3x*
 
 %files static
 %defattr(644,root,root,755)
