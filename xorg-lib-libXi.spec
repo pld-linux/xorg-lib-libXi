@@ -1,19 +1,22 @@
 Summary:	X Input extension library
 Summary(pl.UTF-8):	Biblioteka rozszerzenia X Input
 Name:		xorg-lib-libXi
-Version:	1.2.1
-Release:	2
+Version:	1.2.99.4
+Release:	1
 License:	MIT
 Group:		X11/Libraries
 Source0:	http://xorg.freedesktop.org/releases/individual/lib/libXi-%{version}.tar.bz2
-# Source0-md5:	cfb36307e8e7ffafe40848dba24e0b11
+# Source0-md5:	0f3e9002b5797b01c84c302cb124dc55
+Patch0:		%{name}-man.patch
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
 BuildRequires:	libtool
 BuildRequires:	pkgconfig >= 1:0.19
-BuildRequires:	xorg-lib-libXext-devel
-BuildRequires:	xorg-proto-inputproto-devel >= 1.4
+BuildRequires:	xorg-lib-libX11-devel >= 1.2.99.1
+BuildRequires:	xorg-lib-libXext-devel >= 1.0.99.1
+BuildRequires:	xorg-proto-inputproto-devel >= 1.9.99.902
+BuildRequires:	xorg-proto-xproto-devel >= 7.0.13
 BuildRequires:	xorg-util-util-macros >= 0.99.2
 Obsoletes:	libXi
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -64,6 +67,7 @@ Pakiet zawiera statyczną bibliotekę libXft.
 
 %prep
 %setup -q -n libXi-%{version}
+%patch0 -p1
 
 %build
 %{__libtoolize}
@@ -98,6 +102,7 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_libdir}/libXi.so
 %{_libdir}/libXi.la
 %{_pkgconfigdir}/xi.pc
+%{_includedir}/X11/extensions/*.h
 %{_mandir}/man3/X*.3x*
 
 %files static
