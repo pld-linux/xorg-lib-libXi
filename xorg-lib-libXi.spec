@@ -13,7 +13,7 @@ BuildRequires:	automake
 BuildRequires:	libtool
 BuildRequires:	pkgconfig >= 1:0.19
 BuildRequires:	xorg-lib-libX11-devel >= 1.2.99.1
-BuildRequires:	xorg-lib-libXext-devel >= 1.0.99.1
+BuildRequires:	xorg-lib-libXext-devel >= 1:1.0.99.1
 BuildRequires:	xorg-proto-inputproto-devel >= 1.9.99.902
 BuildRequires:	xorg-proto-xproto-devel >= 7.0.13
 BuildRequires:	xorg-util-util-macros >= 0.99.2
