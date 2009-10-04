@@ -15,8 +15,9 @@ BuildRequires:	pkgconfig >= 1:0.19
 BuildRequires:	xorg-lib-libX11-devel >= 1.2.99.1
 BuildRequires:	xorg-lib-libXext-devel >= 1:1.0.99.1
 BuildRequires:	xorg-proto-inputproto-devel >= 1.9.99.902
+BuildRequires:	xorg-proto-xextproto-devel >= 7.0.3
 BuildRequires:	xorg-proto-xproto-devel >= 7.0.13
-BuildRequires:	xorg-util-util-macros >= 0.99.2
+BuildRequires:	xorg-util-util-macros >= 1.3
 Obsoletes:	libXi
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -91,7 +92,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc COPYING ChangeLog
+%doc COPYING ChangeLog README
 %attr(755,root,root) %{_libdir}/libXi.so.*.*.*
 %attr(755,root,root) %ghost %{_libdir}/libXi.so.6
 
@@ -100,7 +101,7 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_libdir}/libXi.so
 %{_libdir}/libXi.la
 %{_pkgconfigdir}/xi.pc
-%{_includedir}/X11/extensions/*.h
+%{_includedir}/X11/extensions/XInput*.h
 %{_mandir}/man3/X*.3x*
 
 %files static
