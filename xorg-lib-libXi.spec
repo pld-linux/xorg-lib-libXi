@@ -32,8 +32,8 @@ Summary:	Header files for libXi library
 Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki libXi
 Group:		X11/Development/Libraries
 Requires:	%{name} = %{version}-%{release}
-Requires:	xorg-lib-libXext-devel
-Requires:	xorg-proto-inputproto-devel >= 1.4
+Requires:	xorg-lib-libXext-devel >= 1:1.0.99.1
+Requires:	xorg-proto-inputproto-devel >= 1.9.99.902
 Obsoletes:	libXi-devel
 
 %description devel
