@@ -8,10 +8,12 @@ Group:		X11/Libraries
 Source0:	http://xorg.freedesktop.org/releases/individual/lib/libXi-%{version}.tar.bz2
 # Source0-md5:	8df4ece9bd1efb02c28acb2b6f485e09
 URL:		http://xorg.freedesktop.org/
+BuildRequires:	asciidoc
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
 BuildRequires:	libtool
 BuildRequires:	pkgconfig >= 1:0.19
+BuildRequires:	xmlto
 BuildRequires:	xorg-lib-libX11-devel >= 1.2.99.1
 BuildRequires:	xorg-lib-libXext-devel >= 1:1.0.99.1
 BuildRequires:	xorg-proto-inputproto-devel >= 1.9.99.902
