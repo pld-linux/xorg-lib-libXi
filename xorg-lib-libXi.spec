@@ -1,25 +1,26 @@
 Summary:	X Input extension library
 Summary(pl.UTF-8):	Biblioteka rozszerzenia X Input
 Name:		xorg-lib-libXi
-Version:	1.3.2
+Version:	1.4.0
 Release:	1
 License:	MIT
 Group:		X11/Libraries
 Source0:	http://xorg.freedesktop.org/releases/individual/lib/libXi-%{version}.tar.bz2
-# Source0-md5:	26f93781356b1fdde08f7ee9cd5884d6
+# Source0-md5:	4ccdfe866f94c99b9190d16ffcfb3bdc
 URL:		http://xorg.freedesktop.org/
-BuildRequires:	asciidoc
-BuildRequires:	autoconf >= 2.57
+BuildRequires:	asciidoc >= 8.4.5
+BuildRequires:	autoconf >= 2.60
 BuildRequires:	automake
 BuildRequires:	libtool
 BuildRequires:	pkgconfig >= 1:0.19
-BuildRequires:	xmlto
+BuildRequires:	xmlto >= 0.0.20
 BuildRequires:	xorg-lib-libX11-devel >= 1.2.99.1
 BuildRequires:	xorg-lib-libXext-devel >= 1:1.0.99.1
 BuildRequires:	xorg-proto-inputproto-devel >= 1.9.99.902
 BuildRequires:	xorg-proto-xextproto-devel >= 7.0.3
 BuildRequires:	xorg-proto-xproto-devel >= 7.0.13
-BuildRequires:	xorg-util-util-macros >= 1.3
+BuildRequires:	xorg-sgml-doctools >= 1.5
+BuildRequires:	xorg-util-util-macros >= 1.10
 Obsoletes:	libXi
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -100,6 +101,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files devel
 %defattr(644,root,root,755)
+%doc specs/*.{html,css}
 %attr(755,root,root) %{_libdir}/libXi.so
 %{_libdir}/libXi.la
 %{_pkgconfigdir}/xi.pc
