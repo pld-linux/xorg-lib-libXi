@@ -11,6 +11,8 @@ URL:		http://xorg.freedesktop.org/
 BuildRequires:	asciidoc >= 8.4.5
 BuildRequires:	autoconf >= 2.60
 BuildRequires:	automake
+BuildRequires:	docbook-dtd412-xml
+BuildRequires:	docbook-dtd43-xml
 BuildRequires:	libtool
 BuildRequires:	pkgconfig >= 1:0.19
 BuildRequires:	xmlto >= 0.0.20
