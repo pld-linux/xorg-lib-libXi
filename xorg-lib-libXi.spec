@@ -16,14 +16,14 @@ BuildRequires:	docbook-dtd43-xml
 BuildRequires:	libtool
 BuildRequires:	pkgconfig >= 1:0.19
 BuildRequires:	xmlto >= 0.0.20
-BuildRequires:	xorg-lib-libX11-devel >= 1.2.99.1
+BuildRequires:	xorg-lib-libX11-devel >= 1.2.99.901
 BuildRequires:	xorg-lib-libXext-devel >= 1:1.0.99.1
 BuildRequires:	xorg-proto-inputproto-devel >= 1.9.99.902
 BuildRequires:	xorg-proto-xextproto-devel >= 7.0.3
 BuildRequires:	xorg-proto-xproto-devel >= 7.0.13
 BuildRequires:	xorg-sgml-doctools >= 1.5
 BuildRequires:	xorg-util-util-macros >= 1.10
-Requires:	xorg-lib-libX11-devel >= 1.2.99.901
+Requires:	xorg-lib-libX11 >= 1.2.99.901
 Obsoletes:	libXi
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -38,6 +38,7 @@ Summary:	Header files for libXi library
 Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki libXi
 Group:		X11/Development/Libraries
 Requires:	%{name} = %{version}-%{release}
+Requires:	xorg-lib-libX11-devel >= 1.2.99.901
 Requires:	xorg-lib-libXext-devel >= 1:1.0.99.1
 Requires:	xorg-proto-inputproto-devel >= 1.9.99.902
 Obsoletes:	libXi-devel
