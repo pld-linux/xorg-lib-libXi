@@ -15,15 +15,16 @@ BuildRequires:	docbook-dtd412-xml
 BuildRequires:	docbook-dtd43-xml
 BuildRequires:	libtool
 BuildRequires:	pkgconfig >= 1:0.19
-BuildRequires:	xmlto >= 0.0.20
+BuildRequires:	xmlto >= 0.0.22
 BuildRequires:	xorg-lib-libX11-devel >= 1.2.99.901
 BuildRequires:	xorg-lib-libXext-devel >= 1:1.0.99.1
 BuildRequires:	xorg-proto-inputproto-devel >= 2.1
 BuildRequires:	xorg-proto-xextproto-devel >= 7.0.3
 BuildRequires:	xorg-proto-xproto-devel >= 7.0.13
-BuildRequires:	xorg-sgml-doctools >= 1.5
-BuildRequires:	xorg-util-util-macros >= 1.10
+BuildRequires:	xorg-sgml-doctools >= 1.8
+BuildRequires:	xorg-util-util-macros >= 1.12
 Requires:	xorg-lib-libX11 >= 1.2.99.901
+Requires:	xorg-lib-libXext >= 1:1.0.99.1
 Obsoletes:	libXi
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
