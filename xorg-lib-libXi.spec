@@ -1,12 +1,12 @@
 Summary:	X Input extension library
 Summary(pl.UTF-8):	Biblioteka rozszerzenia X Input
 Name:		xorg-lib-libXi
-Version:	1.5.0
+Version:	1.6.1
 Release:	1
 License:	MIT
 Group:		X11/Libraries
 Source0:	http://xorg.freedesktop.org/releases/individual/lib/libXi-%{version}.tar.bz2
-# Source0-md5:	eed79448dd24b31f3fedb1750fc777b3
+# Source0-md5:	78ee882e1ff3b192cf54070bdb19938e
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	asciidoc >= 8.4.5
 BuildRequires:	autoconf >= 2.60
@@ -16,14 +16,14 @@ BuildRequires:	docbook-dtd43-xml
 BuildRequires:	libtool
 BuildRequires:	pkgconfig >= 1:0.19
 BuildRequires:	xmlto >= 0.0.22
-BuildRequires:	xorg-lib-libX11-devel >= 1.2.99.901
+BuildRequires:	xorg-lib-libX11-devel >= 1.4.99.901
 BuildRequires:	xorg-lib-libXext-devel >= 1:1.0.99.1
 BuildRequires:	xorg-proto-inputproto-devel >= 2.1
 BuildRequires:	xorg-proto-xextproto-devel >= 7.0.3
 BuildRequires:	xorg-proto-xproto-devel >= 7.0.13
 BuildRequires:	xorg-sgml-doctools >= 1.8
 BuildRequires:	xorg-util-util-macros >= 1.12
-Requires:	xorg-lib-libX11 >= 1.2.99.901
+Requires:	xorg-lib-libX11 >= 1.4.99.901
 Requires:	xorg-lib-libXext >= 1:1.0.99.1
 Obsoletes:	libXi
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -39,7 +39,7 @@ Summary:	Header files for libXi library
 Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki libXi
 Group:		X11/Development/Libraries
 Requires:	%{name} = %{version}-%{release}
-Requires:	xorg-lib-libX11-devel >= 1.2.99.901
+Requires:	xorg-lib-libX11-devel >= 1.4.99.901
 Requires:	xorg-lib-libXext-devel >= 1:1.0.99.1
 Requires:	xorg-proto-inputproto-devel >= 2.1
 Obsoletes:	libXi-devel
