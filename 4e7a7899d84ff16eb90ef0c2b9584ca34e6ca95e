@@ -1,0 +1,3 @@
+- BRs/Rs fixed
+- add patch solving problems with bogus xi.pc file and link against libXext
+- rel ++
