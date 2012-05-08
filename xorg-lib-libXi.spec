@@ -18,7 +18,7 @@ BuildRequires:	pkgconfig >= 1:0.19
 BuildRequires:	xmlto >= 0.0.22
 BuildRequires:	xorg-lib-libX11-devel >= 1.4.99.901
 BuildRequires:	xorg-lib-libXext-devel >= 1:1.0.99.1
-BuildRequires:	xorg-proto-inputproto-devel >= 2.1
+BuildRequires:	xorg-proto-inputproto-devel >= 2.1.99.6
 BuildRequires:	xorg-proto-xextproto-devel >= 7.0.3
 BuildRequires:	xorg-proto-xproto-devel >= 7.0.13
 BuildRequires:	xorg-sgml-doctools >= 1.8
@@ -41,7 +41,8 @@ Group:		X11/Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	xorg-lib-libX11-devel >= 1.4.99.901
 Requires:	xorg-lib-libXext-devel >= 1:1.0.99.1
-Requires:	xorg-proto-inputproto-devel >= 2.1
+Requires:	xorg-proto-inputproto-devel >= 2.1.99.6
+Requires:	xorg-proto-xproto-devel >= 7.0.13
 Obsoletes:	libXi-devel
 
 %description devel
@@ -106,7 +107,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files devel
 %defattr(644,root,root,755)
-%doc specs/*.html
+%doc specs/inputlib.html
 %attr(755,root,root) %{_libdir}/libXi.so
 %{_libdir}/libXi.la
 %{_pkgconfigdir}/xi.pc
