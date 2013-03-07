@@ -1,12 +1,12 @@
 Summary:	X Input extension library
 Summary(pl.UTF-8):	Biblioteka rozszerzenia X Input
 Name:		xorg-lib-libXi
-Version:	1.6.2
+Version:	1.7
 Release:	1
 License:	MIT
 Group:		X11/Libraries
 Source0:	http://xorg.freedesktop.org/releases/individual/lib/libXi-%{version}.tar.bz2
-# Source0-md5:	2a689ae1089786a6712ce9e2c2c7c7ca
+# Source0-md5:	d77922d822cb3abdbdfb92cd66440576
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	asciidoc >= 8.4.5
 BuildRequires:	autoconf >= 2.60
@@ -18,7 +18,7 @@ BuildRequires:	pkgconfig >= 1:0.19
 BuildRequires:	xmlto >= 0.0.22
 BuildRequires:	xorg-lib-libX11-devel >= 1.4.99.901
 BuildRequires:	xorg-lib-libXext-devel >= 1:1.0.99.1
-BuildRequires:	xorg-proto-inputproto-devel >= 2.1.99.6
+BuildRequires:	xorg-proto-inputproto-devel >= 2.3
 BuildRequires:	xorg-proto-xextproto-devel >= 7.0.3
 BuildRequires:	xorg-proto-xproto-devel >= 7.0.13
 BuildRequires:	xorg-sgml-doctools >= 1.8
@@ -41,7 +41,7 @@ Group:		X11/Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	xorg-lib-libX11-devel >= 1.4.99.901
 Requires:	xorg-lib-libXext-devel >= 1:1.0.99.1
-Requires:	xorg-proto-inputproto-devel >= 2.1.99.6
+Requires:	xorg-proto-inputproto-devel >= 2.3
 Requires:	xorg-proto-xproto-devel >= 7.0.13
 Obsoletes:	libXi-devel
 
