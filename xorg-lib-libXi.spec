@@ -42,6 +42,7 @@ Requires:	%{name} = %{version}-%{release}
 Requires:	xorg-lib-libX11-devel >= 1.4.99.901
 Requires:	xorg-lib-libXext-devel >= 1:1.0.99.1
 Requires:	xorg-proto-inputproto-devel >= 2.3
+Requires:	xorg-proto-xextproto-devel >= 7.0.3
 Requires:	xorg-proto-xproto-devel >= 7.0.13
 Obsoletes:	libXi-devel
 
