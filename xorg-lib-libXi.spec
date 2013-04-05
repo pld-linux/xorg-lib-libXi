@@ -18,6 +18,8 @@ BuildRequires:	pkgconfig >= 1:0.19
 BuildRequires:	xmlto >= 0.0.22
 BuildRequires:	xorg-lib-libX11-devel >= 1.4.99.901
 BuildRequires:	xorg-lib-libXext-devel >= 1:1.0.99.1
+# only for typedef
+BuildRequires:	xorg-lib-libXfixes-devel >= 5
 BuildRequires:	xorg-proto-inputproto-devel >= 2.3
 BuildRequires:	xorg-proto-xextproto-devel >= 7.0.3
 BuildRequires:	xorg-proto-xproto-devel >= 7.0.13
