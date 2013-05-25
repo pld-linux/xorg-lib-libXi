@@ -1,0 +1,10 @@
+--- libXi-1.7.1/man/Makefile.am.orig	2013-05-26 00:03:19.802985396 +0200
++++ libXi-1.7.1/man/Makefile.am	2013-05-26 00:02:19.730070777 +0200
+@@ -158,6 +158,7 @@ XIBarrierReleasePointers.man: XIBarrierR
+ 
+ # String replacements in MAN_SUBSTS now come from xorg-macros.m4 via configure
+ # Unable to use __libmansuffix__ as underscores are lost in txt --> xml conversion
++MAN_SUBSTS += -e 's/manlibmansuffix/$(notdir $(LIB_MAN_DIR))/g'
+ MAN_SUBSTS += -e 's/libmansuffix/$(LIB_MAN_SUFFIX)/g'
+ 
+ # asciidoc is generating [FIXME...] values in the .TH line we should fix.
