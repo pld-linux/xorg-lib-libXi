@@ -1,12 +1,12 @@
 Summary:	X Input extension library
 Summary(pl.UTF-8):	Biblioteka rozszerzenia X Input
 Name:		xorg-lib-libXi
-Version:	1.7.3
+Version:	1.7.4
 Release:	1
 License:	MIT
 Group:		X11/Libraries
 Source0:	http://xorg.freedesktop.org/releases/individual/lib/libXi-%{version}.tar.bz2
-# Source0-md5:	664166b93853692bc582540a9bb4e590
+# Source0-md5:	9c4a69c34b19ec1e4212e849549544cb
 Patch0:		%{name}-man.patch
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	asciidoc >= 8.4.5
