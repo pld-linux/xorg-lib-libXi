@@ -1,12 +1,12 @@
 Summary:	X Input extension library
 Summary(pl.UTF-8):	Biblioteka rozszerzenia X Input
 Name:		xorg-lib-libXi
-Version:	1.7.10
+Version:	1.8
 Release:	1
 License:	MIT
 Group:		X11/Libraries
 Source0:	https://xorg.freedesktop.org/releases/individual/lib/libXi-%{version}.tar.bz2
-# Source0-md5:	62c4af0839072024b4b1c8cbe84216c7
+# Source0-md5:	74055672a111a98ce2841d2ec4057b05
 Patch0:		%{name}-man.patch
 URL:		https://xorg.freedesktop.org/
 BuildRequires:	asciidoc >= 8.4.5
@@ -21,14 +21,14 @@ BuildRequires:	xorg-lib-libX11-devel >= 1.6
 BuildRequires:	xorg-lib-libXext-devel >= 1:1.0.99.1
 # only for typedef
 BuildRequires:	xorg-lib-libXfixes-devel >= 5
-BuildRequires:	xorg-proto-inputproto-devel >= 2.3
+BuildRequires:	xorg-proto-inputproto-devel >= 2.3.99.1
 BuildRequires:	xorg-proto-xextproto-devel >= 7.0.3
 BuildRequires:	xorg-proto-xproto-devel >= 7.0.13
 BuildRequires:	xorg-sgml-doctools >= 1.8
 BuildRequires:	xorg-util-util-macros >= 1.12
 Requires:	xorg-lib-libX11 >= 1.6
 Requires:	xorg-lib-libXext >= 1:1.0.99.1
-Obsoletes:	libXi
+Obsoletes:	libXi < 6.0.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -44,10 +44,10 @@ Group:		X11/Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	xorg-lib-libX11-devel >= 1.6
 Requires:	xorg-lib-libXext-devel >= 1:1.0.99.1
-Requires:	xorg-proto-inputproto-devel >= 2.3
+Requires:	xorg-proto-inputproto-devel >= 2.3.99.1
 Requires:	xorg-proto-xextproto-devel >= 7.0.3
 Requires:	xorg-proto-xproto-devel >= 7.0.13
-Obsoletes:	libXi-devel
+Obsoletes:	libXi-devel < 6.0.2
 
 %description devel
 X Input extension library.
@@ -66,7 +66,7 @@ Summary:	Static libXi library
 Summary(pl.UTF-8):	Biblioteka statyczna libXi
 Group:		X11/Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
-Obsoletes:	libXi-static
+Obsoletes:	libXi-static < 6.0.2
 
 %description static
 X Input extension library.
