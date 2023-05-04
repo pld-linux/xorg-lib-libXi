@@ -1,12 +1,12 @@
 Summary:	X Input extension library
 Summary(pl.UTF-8):	Biblioteka rozszerzenia X Input
 Name:		xorg-lib-libXi
-Version:	1.8
+Version:	1.8.1
 Release:	1
 License:	MIT
 Group:		X11/Libraries
-Source0:	https://xorg.freedesktop.org/releases/individual/lib/libXi-%{version}.tar.bz2
-# Source0-md5:	74055672a111a98ce2841d2ec4057b05
+Source0:	https://xorg.freedesktop.org/releases/individual/lib/libXi-%{version}.tar.xz
+# Source0-md5:	89ac74ad6829c08d5c8ae8f48d363b06
 Patch0:		%{name}-man.patch
 URL:		https://xorg.freedesktop.org/
 BuildRequires:	asciidoc >= 8.4.5
@@ -14,8 +14,9 @@ BuildRequires:	autoconf >= 2.60
 BuildRequires:	automake
 BuildRequires:	docbook-dtd412-xml
 BuildRequires:	docbook-dtd43-xml
-BuildRequires:	libtool
+BuildRequires:	libtool >= 2:2
 BuildRequires:	pkgconfig >= 1:0.19
+BuildRequires:	tar >= 1:1.22
 BuildRequires:	xmlto >= 0.0.22
 BuildRequires:	xorg-lib-libX11-devel >= 1.6
 BuildRequires:	xorg-lib-libXext-devel >= 1:1.0.99.1
@@ -26,6 +27,7 @@ BuildRequires:	xorg-proto-xextproto-devel >= 7.0.3
 BuildRequires:	xorg-proto-xproto-devel >= 7.0.13
 BuildRequires:	xorg-sgml-doctools >= 1.8
 BuildRequires:	xorg-util-util-macros >= 1.12
+BuildRequires:	xz
 Requires:	xorg-lib-libX11 >= 1.6
 Requires:	xorg-lib-libXext >= 1:1.0.99.1
 Obsoletes:	libXi < 6.0.2
