@@ -82,7 +82,7 @@ Pakiet zawiera statyczną bibliotekę libXft.
 
 %prep
 %setup -q -n libXi-%{version}
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 %{__libtoolize}
